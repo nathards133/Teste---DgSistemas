@@ -5,15 +5,6 @@ let jsonData = [];
 
 // Função para ler o arquivo CSV e convertê-lo em um objeto JSON
 
-// function readCSV() {
-// 	const fs = require('fs');
-// 	const csv = fs.readFileSync('data-teste.csv', 'utf-8');
-// 	const jsonData = Papa.parse(csv, {header: true}).data;
-// 	console.log(jsonData);
-//   return jsonData;
-// }
-
-// let data = readCSV();
 function lerCSV() {
 	const fs = require('fs');
 	const csv = fs.readFileSync('data-teste.csv', 'utf-8');
@@ -49,19 +40,19 @@ sortByColunas(dados,"idade", "ASC");
 
 
     // Função para gerar um array com 100 números aleatórios e filtrar os números ímpares
-function randomArray() {
-        let randomNumbers = [];
-      
-        for (let i = 0; i < 100; i++) {
-          randomNumbers.push(Math.floor(Math.random() * 100));
-        }
-      
-        const filteredNumbers = randomNumbers.filter((number, index) => index % 2 !== 0);
-        console.log(filteredNumbers);
+	 function gerarArrayAleatorio() {
+		let numerosAleatorios = [];
+	 
+		for (let i = 0; i < 100; i++) {
+		  numerosAleatorios.push(Math.floor(Math.random() * 100));
+		}
+	 
+		const numerosFiltrados = numerosAleatorios.filter((numero, indice) => indice % 2 !== 0);
+		console.log(numerosFiltrados);
 }
-	randomArray();
+ gerarArrayAleatorio();
 
-//     // Função para calcular o valor total de uma compra com base no valor de cada produto e na quantidade de cada um
+ // Função para calcular o valor total de uma compra com base no valor de cada produto e na quantidade de cada um
 function simularFinanciamento(emprestimoTotal, parcelaMensal, juros) {
 	let debito = emprestimoTotal;
 	let valorTotalPago = 0;
