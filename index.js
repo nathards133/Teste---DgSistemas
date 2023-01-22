@@ -53,19 +53,6 @@ sortByColunas(dados,"idade", "ASC");
  gerarArrayAleatorio();
 
  // Função para calcular o valor total de uma compra com base no valor de cada produto e na quantidade de cada um
-// function simularFinanciamento(emprestimoTotal, parcelaMensal, juros) {
-// 	let debito = emprestimoTotal;
-// 	let valorTotalPago = 0;
-// 	let meses = 0;
-// 	while (debito > 0) {
-// 		 debito += debito * (juros / 100);
-// 		 debito -= parcelaMensal;
-// 		 valorTotalPago += parcelaMensal;
-// 		 meses++;
-// 	}
-// 	console.log(`Faltam ${meses} meses para terminar suas parcelas, continue pagando mensalmente, atualmente seu debito total é de: R$ ${valorTotalPago}`);
-// }
-// simularFinanciamento(20000, 1000, 2);
 function simularFinanciamento(emprestimoTotal, parcelaMensal, juros) {
 	let debito = emprestimoTotal;
 	let valorTotalPago = 0;
